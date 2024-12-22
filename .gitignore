@@ -168,6 +168,7 @@ cython_debug/
 #.idea/
 
 data/
+zipped_data/
 
 # PyPI configuration file
 .pypirc
