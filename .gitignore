@@ -169,6 +169,8 @@ cython_debug/
 
 data/
 zipped_data/
+backup_invalid_files/
+*.pkl
 
 # PyPI configuration file
 .pypirc
