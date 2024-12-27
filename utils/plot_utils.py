@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import cv2  
 
-def plot_images(images, titles=None, figsize=(12, 16)):
+def plot_images(images, titles=None, figsize=(16, 16)):
     if isinstance(images[0], str):
         images = [cv2.imread(img) for img in images]
 
