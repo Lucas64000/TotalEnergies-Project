@@ -8,5 +8,6 @@ def init_preprocess_logger():
         style="{",
         format="{asctime} - {levelname} - {message}",
         datefmt="%Y-%m-%d %H:%M",
+        encoding='utf-8',
     )
     return logger
