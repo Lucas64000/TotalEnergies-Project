@@ -168,7 +168,7 @@ cython_debug/
 #.idea/
 
 data/
-zipped_data/
+zipped/
 backup_invalid_files/
 
 # PyPI configuration file
