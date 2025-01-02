@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import cv2  
+from PIL import Image 
 
 def plot_images(images, titles=None, figsize=(16, 16)):
     if isinstance(images[0], str):
-        images = [cv2.imread(img) for img in images]
+        images = [Image.open(img) for img in images]
 
     num_images = len(images)
     cols = 3  
@@ -16,7 +16,7 @@ def plot_images(images, titles=None, figsize=(16, 16)):
 
     for i, img in enumerate(images):
         ax = axes[i]
-        ax.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))  
+        ax.imshow(img.convert('RGB'))  
         ax.axis('off')  
 
         if titles:
